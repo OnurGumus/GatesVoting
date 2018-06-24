@@ -1,0 +1,12 @@
+group Server
+    FSharp.Core
+    Fable.JsonConverter
+    Giraffe
+    Giraffe.TokenRouter
+    Microsoft.AspNetCore.StaticFiles
+    Microsoft.AspNetCore
+    Microsoft.AspNetCore.WebSockets
+    Microsoft.AspNetCore.WebSockets.Server
+    System.Net.NetworkInformation
+    Saturn
+    FSharp.Data

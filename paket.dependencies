@@ -1,0 +1,33 @@
+source https://api.nuget.org/v3/index.json
+
+group Server
+    source https://api.nuget.org/v3/index.json
+    nuget FSharp.Core
+    nuget Fable.JsonConverter
+    nuget Giraffe
+    nuget Giraffe.TokenRouter
+    nuget Microsoft.AspNetCore.StaticFiles
+    nuget Microsoft.AspNetCore
+    nuget Microsoft.AspNetCore.WebSockets
+    nuget Microsoft.AspNetCore.WebSockets.Server
+    nuget System.Net.NetworkInformation
+    nuget FSharp.Data prerelease
+    nuget Saturn
+group Client
+    source https://api.nuget.org/v3/index.json
+    nuget Fable.Elmish.HMR
+    nuget FSharp.Core
+    nuget Fable.Core
+    nuget Fable.Elmish.React
+    nuget Fable.Elmish.Browser
+    nuget Fable.Elmish.Debugger
+    clitool dotnet-fable
+
+// [ FAKE GROUP ]
+group Build
+    source https://api.nuget.org/v3/index.json
+    nuget Fake.DotNet.Cli
+    nuget Fake.IO.FileSystem
+    nuget Fake.Core.Target
+    nuget Fake.JavaScript.Yarn
+    nuget Fake.JavaScript.Npm
