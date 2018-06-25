@@ -1,5 +1,6 @@
 source https://api.nuget.org/v3/index.json
 
+
 group Server
     source https://api.nuget.org/v3/index.json
     nuget FSharp.Core
@@ -13,6 +14,12 @@ group Server
     nuget System.Net.NetworkInformation
     nuget FSharp.Data prerelease
     nuget Saturn
+    nuget Akkling.Persistence
+    nuget Akka.Persistence.Sqlite
+    nuget Newtonsoft.Json
+	nuget Chessie
+    nuget System.ValueTuple
+
 group Client
     source https://api.nuget.org/v3/index.json
     nuget Fable.Elmish.HMR
@@ -21,6 +28,7 @@ group Client
     nuget Fable.Elmish.React
     nuget Fable.Elmish.Browser
     nuget Fable.Elmish.Debugger
+	nuget System.ValueTuple
     clitool dotnet-fable
 
 // [ FAKE GROUP ]

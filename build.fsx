@@ -68,7 +68,7 @@ Target.create InstallClient (fun _ ->
 Target.create RestoreServer (fun _ ->
     DotNet.restore id serverPath 
 )
-
+Target.create "BuildClient" (fun _ ->DotNet.exec (fun e -> { e with WorkingDirectory = clientPath} ) "fable" "webpack -- -p" |> ignore)
 Target.create Build (fun _ ->
     !! (serverPath + "/**/*.*proj")
     |> Seq.iter (DotNet.build id)

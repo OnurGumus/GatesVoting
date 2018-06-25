@@ -10,3 +10,7 @@ group Server
     System.Net.NetworkInformation
     Saturn
     FSharp.Data
+    Akkling.Persistence
+    Akka.Persistence.Sqlite
+    Newtonsoft.Json
+    Chessie

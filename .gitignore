@@ -296,3 +296,4 @@ Application/SmartKiosk/DeskoLibs)/
 *.ncrunchproject
 *.ncrunchsolution
 packages
+/src/Server/mydb.db

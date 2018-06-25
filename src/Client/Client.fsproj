@@ -5,7 +5,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="../Shared/Model.fs" />
+    <Compile Include="Type.fs" />
+    <Compile Include="State.fs" />
+    <Compile Include="View.fs" />
     <Compile Include="App.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="paket.references" />
+    <None Include="webpack.config.js" />
   </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>
