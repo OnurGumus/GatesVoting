@@ -10,6 +10,6 @@
    * [Jetbrains Rider](https://www.jetbrains.com/rider/)
 
 ## Building
-`build.cmd run` or `build.sh run`. Then browse to http://localhost:8080
+`build.cmd run` or `build.sh run`. Then after seeing "Compiled successfully." (it may take sometime) message browse to http://localhost:8080
 
 If using Visual Studio 2017, do NOT attempt to build directly in VS. You *must* use `build.cmd` to compile and run the application.
