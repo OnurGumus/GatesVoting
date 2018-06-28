@@ -104,6 +104,4 @@ InstallClient
   ==> RestoreServer
   ==> Run
 
-RunTargetOrDefault "Build"
-
 Target.runOrDefault Run
