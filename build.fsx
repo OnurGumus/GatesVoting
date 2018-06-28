@@ -99,7 +99,11 @@ Target.create Run (fun _ ->
 Clean
     ==> InstallClient
     ==> Build
-Build 
-   ==> RestoreServer
+
+InstallClient
+  ==> RestoreServer
+  ==> Run
+
+RunTargetOrDefault "Build"
 
 Target.runOrDefault Run
